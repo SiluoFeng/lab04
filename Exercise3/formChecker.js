@@ -51,7 +51,8 @@ function hide()
 }
 
 
-function check(){
+function check()
+{
   var Rose = document.getElementById("Rose").value;
   var Lily = document.getElementById("Lily").value;
   var Hydrangea = document.getElementById("Hydrangea").value;
