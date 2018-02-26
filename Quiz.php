@@ -15,7 +15,7 @@ if($Q1 == "Madrid")
 {
   $correct++;
 }
-if($Q2 == "China")
+if($Q2 == "Beijing")
 {
   $correct++;
 }
@@ -37,7 +37,7 @@ echo "Correct answer: Madrid <br><br>";
 
 echo "Question 2: What was the captial of China?<br>";
 echo "You answered: ".$Q2."<br>";
-echo "Correct answer: China <br><br>";
+echo "Correct answer: Beijing <br><br>";
 
 echo "Question 3: What was the capital of the U.S?<br>";
 echo "You answered: ".$Q3."<br>";
