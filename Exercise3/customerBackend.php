@@ -3,9 +3,9 @@ echo "<div>";
 echo "<link rel='stylesheet' href='style.css'>";
 $usrname = $_POST["usrname"];
 $password = $_POST["psw"];
-$watch = $_POST["Rose"];
-$flower = $_POST["Lily"];
-$car = $_POST["Hydrangea"];
+$Rose = $_POST["Rose"];
+$Lily = $_POST["Lily"];
+$Hydrangea = $_POST["Hydrangea"];
 $ship = $_POST["ship"];
 if($Rose ==''){
   $Rose = 0;
@@ -14,12 +14,12 @@ if($Lily ==''){
   $Lily = 0;
 }
 if($Hydrangea==''){
-  $cHydrangea = 0;
+  $Hydrangea = 0;
 }
 $RoseCost = $Rose * 3;
-$LilyCost = $Lily *4;
-$Hydrangea = $Hydrangea * 5;
-$totalCost = $watchCost + $flowerCost +$carCost;
+$LilyCost = $Lily * 4;
+$HydrangeaCost = $Hydrangea * 5;
+$totalCost = $RoseCost + $LilyCost + $HydrangeaCost;
 
 $shipCost =0;
 echo "Flower store <br>";
@@ -38,10 +38,10 @@ if($ship=="seven"){
 echo "<h3> Here's Your Receipt!</h3>";
 echo "<table id = 'receipt'>";
 echo "<tr><th>   </th><th>Quanity</th><th>Cost per Item</th><th>Sub Total</th></tr>";
-echo "<tr><td id = 'item'>Watch</td><td>$watch</td><td>$3</td><td>$$watchCost</td></tr>";
-echo "<tr><td id = 'item'>Flower</td><td>$flower</td><td>$40</td><td>$$flowerCost</td></tr>";
-echo "<tr><td id = 'item'>Car</td><td>$car</td><td>$50</td><td>$$carCost</td></tr>";
-echo "<tr><td id = 'item'>Shipping</td><td colspan = '2'>$ship day(s)</td><td>$$shipCost</td></tr>";
+echo "<tr><td id = 'item'>Rose</td><td>$Rose</td><td>$3</td><td>$$RoseCost</td></tr>";
+echo "<tr><td id = 'item'>Lily</td><td>$Lily</td><td>$4</td><td>$$LilyCost</td></tr>";
+echo "<tr><td id = 'item'>Hydrangea</td><td>$Hydrangea</td><td>$5</td><td>$$HydrangeaCost</td></tr>";
+echo "<tr><td id = 'item'>Ship</td><td colspan = '2'>for $ship day(s)</td><td>$$shipCost</td></tr>";
 echo "<tr><td id = 'item' colspan = '3'>Total Cost</td><td id = 'item'>$$totalCost</td></tr>";
 echo "</table>";
 echo "</div>";

@@ -3,29 +3,6 @@ var flag1 = false;
 var flag2 = false;
 
 
-
-// // When the user clicks on the password field, show the message box
-// myInput.onfocus = function() {
-//     document.getElementById("message").style.display = "block";
-//   }
-//
-// // When the user clicks outside of the password field, hide the message box
-// myInput.onblur = function(){
-//     document.getElementById("message").style.display = "none";
-// }
-
-  // Validate length
-  // if(myInput.value.length >= 1)
-  // {
-  //   flag1 = true;
-  // }
-  // else
-  // {
-  //   alert("The password should be at least one character!")
-  //   flag1 =false;
-  // }
-
-
 function hide()
 {
     var myInput = document.getElementById("psw");
@@ -55,7 +32,7 @@ function check()
   var Rose = document.getElementById("Rose").value;
   var Lily = document.getElementById("Lily").value;
   var Hydrangea = document.getElementById("Hydrangea").value;
-  if(Rose==''||Lily==''||Hydrangea==''){
+  if(Rose==''&&Lily==''&&Hydrangea==''){
     alert("Please choose at least one product!");
     return false;
   }else{

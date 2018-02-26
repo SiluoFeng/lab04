@@ -13,7 +13,7 @@
             <label for="psw">Password</label>
             <input type = "password" id ="psw" name ="psw">
             <br>
-            <input type = "button" value = "Login" onClick = "hide()">
+            <input type = "button" value = "Login" onClick = "hide()" class="button">
         </div>
 
 
@@ -23,7 +23,7 @@
 
   <div id ="store" class="container" hidden>
       <h3>Flower Store</h3>
-        <table>
+        <table class="store">
           <tr>
             <td>Kind</td>
             <td>Price</td>
@@ -41,11 +41,11 @@
         </table>
 
         <h3>Shipping option:</h3>
-        <input type ="radio" name ="ship" value = "seven">Free 7 days!
-        <input type ="radio" name ="ship" value = "one"> $50.00 Over night
-        <input type ="radio" name ="ship" value = "three"> $5.00 Three day
-        <input type="submit" value="Submit">
-        <input type ="reset" value="Reset and Logout" onclick = "location.reload()">
+        <input type ="radio" name ="ship" value = "seven">Free 7 days!<br>
+        <input type ="radio" name ="ship" value = "one"> $50.00 Over night<br>
+        <input type ="radio" name ="ship" value = "three"> $5.00 Three day<br>
+        <input type="submit" value="Submit" class="click">
+        <input type ="reset" value="Reset and Logout" class="click" onclick = "location.reload()">
       </div>
   </form>
 

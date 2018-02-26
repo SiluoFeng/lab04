@@ -1,9 +1,17 @@
 .container
 {
-  max-width: 500px;
+  max-width: 960px;
   margin:auto;
   background-color: FloralWhite;
+  font-family: Arial;
+  font-size: 18pt;
+}
 
+h3
+{
+    text-align: center;
+    font-family: Arial;
+    font-size: 30pt;
 }
 
 input
@@ -11,14 +19,28 @@ input
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
-  border-radius: 4px;
+  border-radius: 100px;
   box-sizing: border-box;
-  margin-top: 6px;
+  margin-top: 16px;
   margin-bottom: 16px;
 }
 
-input [type=button]
+input.button
 {
-  background-color: lightCoral;
-  
+  background-color: GoldenRod;
+  font-family: Arial;
+  font-size: 22pt;
+}
+
+input.click
+{
+  background-color: GoldenRod;
+  font-family: Arial;
+  font-size: 22pt;
+}
+
+table.store
+{
+  font-family: Arial;
+  font-size: 18pt;
 }
