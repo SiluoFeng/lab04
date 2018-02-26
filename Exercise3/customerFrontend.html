@@ -1,0 +1,62 @@
+<html>
+<head>
+  <link rel="stylesheet" href="style.css">
+<head>
+  <body>
+  <form action="customerBackend.php" method="post" onsubmit="return check()">
+      <div id ="login">
+        <div class = "container">
+          <h3>Login</h3>
+            <label for="usrname">Username</label>
+            <input type ="text" id ="usrname" name="usrname" placeholder="name@domain.com">
+
+            <label for="psw">Password</label>
+            <input type = "password" id ="psw" name ="psw">
+
+            <input type = "button" value = "Login" onClick = "hide()">
+        </div>
+
+
+        <script src="formerChecker.js"></script>
+
+      </div>
+
+
+      <div id = "message">
+        <h3>Password must contain the following:</h3>
+        <p id="length" class="invalid">Minimum <b>1 characters</b></p>
+      </div>
+      <script src="formerChecker.js"></script>
+
+    </div>
+
+  <div id ="store" class="container" hidden>
+      <h3>Flower Store</h3>
+        <table>
+          <tr>
+            <td>Kind</td>
+            <td>Price</td>
+            <td>Number</td>
+          </tr>
+          <tr>
+            <td>Rose</td><td>$3</td><td><input id = "Rose" type ="number" min="0" name="Rose"></td>
+          </tr>
+          <tr>
+            <td>Lily</td><td>$4</td><td><input id ="Lily" type ="number" min="0" name ="Lily"></td>
+          </tr>
+          <tr>
+            <td>Hydrangea</td><td>$5</td><td><input id ="Hydrangea" type ="number" min="0" name ="Hydrangea"></td>
+          </tr>
+        </table>
+
+        <h3>Shipping option:</h3>
+        <input type ="radio" name ="ship" value = "seven">Free 7 days!
+        <input type ="radio" name ="ship" value = "one"> $50.00 Over night
+        <input type ="radio" name ="ship" value = "three"> $5.00 Three day
+        <input type="submit" value="Submit">
+        <input type ="reset" value="Reset and Logout" onclick = "location.reload()">
+      </div>
+  </form>
+
+  </body>
+</html>
